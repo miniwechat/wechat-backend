@@ -1,0 +1,2 @@
+class FrontCode < ApplicationRecord
+end

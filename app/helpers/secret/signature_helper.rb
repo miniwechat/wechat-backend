@@ -1,0 +1,2 @@
+module Secret::SignatureHelper
+end

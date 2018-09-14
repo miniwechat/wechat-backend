@@ -1,0 +1,2 @@
+module Secret::SessionsHelper
+end
