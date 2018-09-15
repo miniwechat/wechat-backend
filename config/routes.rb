@@ -19,9 +19,10 @@ Rails.application.routes.draw do
     get '/test/upload', to: 'photo#upload'
   end
 
-  scope :photo do
-    get '/index', to: 'photo#index'
-    get '/upload/', to: 'photo#upload'
+  scope :file do
+    get '/index', to: 'file#index'
+    post '/upload', to: 'file#upload'
+    get '/download',to: 'file#download'
   end
 
 end

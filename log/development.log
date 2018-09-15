@@ -26099,3 +26099,851 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/photo/upload" for 192.168.19.164 at 2018-09-14 19:33:33 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/photo/upload"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/photo/upload" for 192.168.19.164 at 2018-09-14 19:34:14 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotoController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fcd73e4e4e8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-18073-cf9x63.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.fwDzYvaDaKZo0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.fwDzYvaDaKZo0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 19:42:48 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe1bd911238 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-23529-10c0vk6.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.XBphf7YCpMIG0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.XBphf7YCpMIG0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 19:44:21 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe1bd9f80e8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-23529-90g2mx.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.bTD2IJiGbGNA0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.bTD2IJiGbGNA0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 161ms
+
+
+  
+NameError (undefined local variable or method `success' for #<FileController:0x007fe1bd9fb450>):
+  
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 19:44:55 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe1bb605f50 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-23529-776d9a.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.V8xlpdcMFvui0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.V8xlpdcMFvui0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 3ms (Views: 1.5ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 19:56:48 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe1ba5b5fd8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-23529-qjkhll.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.O6Ttg3cE6DTD0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.O6Ttg3cE6DTD0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 3ms (Views: 0.4ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 19:57:13 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fe1bdbd71e8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-23529-1no1ntf.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.QD4chjNbvqGN0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.QD4chjNbvqGN0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:17:11 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFileStores (20180914120802)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (16.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "file_stores" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (20.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180914120802"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:17:52 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c759adb20 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-1ei6jzq.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.8g8pq8EiRXoY0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.8g8pq8EiRXoY0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  
+app/controllers/file_controller.rb:28:in `save_file'
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:19:55 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c741c2e20 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-1kszwap.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.tTEaitK3FXbN0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.tTEaitK3FXbN0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  
+app/controllers/file_controller.rb:28:in `save_file'
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:29:01 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c72b1d698 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-gfnk8p.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.CBoxazyLSRkR0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.CBoxazyLSRkR0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  
+app/controllers/file_controller.rb:28:in `save_file'
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:40:44 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c735c5ca8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-13p0eia.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.JCDKWKPpuaRr0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.JCDKWKPpuaRr0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  
+app/controllers/file_controller.rb:29:in `save_file'
+app/controllers/file_controller.rb:11:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:41:04 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c759becb8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-13kkbem.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.AO1TL3WxATMF0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.AO1TL3WxATMF0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (Views: 0.3ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/file_controller.rb:20:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:41:45 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75aed3f0 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-98g6cz.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.LTGpu0ofHt6n0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.LTGpu0ofHt6n0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:43:13 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c723e2950 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-16u8als.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.edoga3NCABwz0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.edoga3NCABwz0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:43:36 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c733fc1b0 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-ja61rv.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.4UrRfT4BOirV0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.4UrRfT4BOirV0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:44:36 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c74292f58 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-ggzfi1.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.trv96wHNSOM90c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.trv96wHNSOM90c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  
+app/controllers/file_controller.rb:28:in `save_file'
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:44:49 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c733fd8f8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-161yz53.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.OTsEdwt0R5AE0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.OTsEdwt0R5AE0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  
+app/controllers/file_controller.rb:28:in `save_file'
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:47:04 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75831008 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-e6cwli.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.eqid1hy5198l0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.eqid1hy5198l0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  
+app/controllers/file_controller.rb:26:in `save_file'
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:47:26 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75a16b70 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-1yfioud.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.5tNWgGGTwTu20c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.5tNWgGGTwTu20c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `original_filename' for nil:NilClass):
+  
+app/controllers/file_controller.rb:26:in `save_file'
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:47:46 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c7250d668 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-1r33ekn.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.hcjJnZrTlXhs0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.hcjJnZrTlXhs0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.8ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.hcjJnZrTlXhs0c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-14 12:47:47.032888"], ["updated_at", "2018-09-14 12:47:47.032888"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 61ms (Views: 1.3ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:48:26 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c737af6b8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-do7sk6.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.TAZxd3fEFQax0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.TAZxd3fEFQax0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.TAZxd3fEFQax0c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-14 12:48:26.146897"], ["updated_at", "2018-09-14 12:48:26.146897"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:48:44 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75cb5098 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-1r0ecf5.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.FU5Q8sWjWuyM0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.FU5Q8sWjWuyM0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/file_controller.rb:22:in `save_file'
+app/controllers/file_controller.rb:10:in `upload'
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 20:48:58 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75d15a88 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-1jszun7.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.qQqIMA5pIbTN0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.qQqIMA5pIbTN0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.qQqIMA5pIbTN0c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-14 12:48:58.317860"], ["updated_at", "2018-09-14 12:48:58.317860"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 21:01:06 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75c72e28 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-3rfl37.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.w8bM8ceekhy20c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.w8bM8ceekhy20c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.w8bM8ceekhy20c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-14 13:01:06.588356"], ["updated_at", "2018-09-14 13:01:06.588356"]]
+  [1m[35m (16.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/file/download?file_name=bluetooth-blue.png" for 192.168.19.164 at 2018-09-14 21:25:23 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file_name"=>"bluetooth-blue.png", "file"=>{}}
+No template found for FileController#download, rendering head :no_content
+Completed 204 No Content in 85ms
+
+
+Started GET "/file/download?file_name=bluetooth-blue.png" for 192.168.19.164 at 2018-09-14 21:27:00 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file_name"=>"bluetooth-blue.png", "file"=>{}}
+No template found for FileController#download, rendering head :no_content
+Completed 204 No Content in 85ms
+
+
+Started GET "/file/download?filename=bluetooth-blue.png" for 192.168.19.164 at 2018-09-14 21:27:34 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"filename"=>"bluetooth-blue.png", "file"=>{}}
+No template found for FileController#download, rendering head :no_content
+Completed 204 No Content in 121ms
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-14 21:38:00 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c7427aca0 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180914-43103-pb3xhs.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.FG4lsj2FY7U80c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.FG4lsj2FY7U80c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.FG4lsj2FY7U80c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-14 13:38:01.131035"], ["updated_at", "2018-09-14 13:38:01.131035"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 38ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:12:38 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.3ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 72ms (Views: 51.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:14:00 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.3ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:14:14 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.8ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:16:53 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.6ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:17:05 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:17:30 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:18:25 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.5ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:19:16 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:20:04 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.8ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:20:41 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.3ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:21:03 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.3ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:22:40 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.3ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:22:46 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.3ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:36:51 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.3ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 22:36:54 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-14 23:05:00 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (2.6ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 38ms (Views: 28.9ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-15 09:57:07 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75af60b8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180915-43103-13kphhq.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.r2kdx3zpDQIL0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.r2kdx3zpDQIL0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (2.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.r2kdx3zpDQIL0c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-15 01:57:08.038971"], ["updated_at", "2018-09-15 01:57:08.038971"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 39ms (Views: 1.3ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-15 09:58:19 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c74154b50 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180915-43103-1knqvc2.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.uCKdrGXiccaN0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.uCKdrGXiccaN0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.uCKdrGXiccaN0c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-15 01:58:19.151820"], ["updated_at", "2018-09-15 01:58:19.151820"]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 43ms (Views: 0.2ms | ActiveRecord: 10.4ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-15 09:58:25 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c759bdfc0 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180915-43103-18aq3jg.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.jCs4SdzTVAnM0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.jCs4SdzTVAnM0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (19.5ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.jCs4SdzTVAnM0c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-15 01:58:25.932202"], ["updated_at", "2018-09-15 01:58:25.932202"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 21.1ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-15 10:12:13 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75d2e268 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180915-43103-et2v58.mp4>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.LCrauuLi3LQacfcc3b329a7632893fce52c682151219.mp4", @content_type="video/mp4", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.LCrauuLi3LQacfcc3b329a7632893fce52c682151219.mp4\"\r\nContent-Type: video/mp4\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (90.2ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.LCrauuLi3LQacfcc3b329a7632893fce52c682151219.mp4"], ["created_at", "2018-09-15 02:12:13.518960"], ["updated_at", "2018-09-15 02:12:13.518960"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 131ms (Views: 0.5ms | ActiveRecord: 92.2ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-15 10:12:53 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c75d14a70 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180915-43103-gtrh3p.mp4>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.KZKgDDMcDa7mcfcc3b329a7632893fce52c682151219.mp4", @content_type="video/mp4", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.KZKgDDMcDa7mcfcc3b329a7632893fce52c682151219.mp4\"\r\nContent-Type: video/mp4\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.KZKgDDMcDa7mcfcc3b329a7632893fce52c682151219.mp4"], ["created_at", "2018-09-15 02:12:53.141467"], ["updated_at", "2018-09-15 02:12:53.141467"]]
+  [1m[35m (248.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 297ms (Views: 0.3ms | ActiveRecord: 248.8ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-15 10:13:41 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c731df170 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180915-43103-3kckr9.mp4>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.UxA6XPlFdRMocfcc3b329a7632893fce52c682151219.mp4", @content_type="video/mp4", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.UxA6XPlFdRMocfcc3b329a7632893fce52c682151219.mp4\"\r\nContent-Type: video/mp4\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.UxA6XPlFdRMocfcc3b329a7632893fce52c682151219.mp4"], ["created_at", "2018-09-15 02:13:42.019547"], ["updated_at", "2018-09-15 02:13:42.019547"]]
+  [1m[35m (71.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 100ms (Views: 0.3ms | ActiveRecord: 71.7ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:14:00 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateScans (20180710083644)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "scans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "openid" varchar, "lng_sec" varchar, "lat_sec" varchar, "scanTime_sec" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180710083644"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateSessionKeys (20180720101017)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "session_keys" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rdSession" varchar, "session_key" varchar, "openId" varchar, "pubKey" varchar, "rdSession_key" varchar, "rdSession_iv" varchar, "rdSession_final" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180720101017"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFrontCodes (20180721050619)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "front_codes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "grant_type" varchar, "jsCode" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180721050619"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFileStores (20180914120802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "file_stores" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180914120802"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-15 02:23:19.000687"], ["updated_at", "2018-09-15 02:23:19.000687"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:25:59 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (15.4ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 41ms (Views: 1.5ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:26:39 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (14.9ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 23ms (Views: 6.1ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:26:52 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.4ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:28:14 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (11.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 38ms (Views: 15.8ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:29:02 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.3ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:30:00 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (1.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 17ms (Views: 10.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:30:26 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.4ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/file/upload" for 192.168.19.164 at 2018-09-15 10:30:39 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#upload as HTML
+  Parameters: {"user"=>"test", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fb39906d2c8 @tempfile=#<Tempfile:/var/folders/mk/g9h09b6x2y1f9xx7x589n7b80000gp/T/RackMultipart20180915-84525-1bd0eo6.png>, @original_filename="wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.UlHtRBghkMiJ0c385478b762839d7909d5d9fbfd8246.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.UlHtRBghkMiJ0c385478b762839d7909d5d9fbfd8246.png\"\r\nContent-Type: image/png\r\n">}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.1ms)[0m  [1m[32mINSERT INTO "file_stores" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wx6e1ee86184594b21.o6zAJsy8C8CqNspHfI3FcOrKbEH0.UlHtRBghkMiJ0c385478b762839d7909d5d9fbfd8246.png"], ["created_at", "2018-09-15 02:30:39.764394"], ["updated_at", "2018-09-15 02:30:39.764394"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 167ms (Views: 0.4ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:30:42 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/file/download" for 192.168.19.164 at 2018-09-15 10:31:39 +0800
+Cannot render console from 192.168.19.164! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FileController#download as */*
+  Parameters: {"file"=>{}}
+  [1m[36mFileStore Load (0.2ms)[0m  [1m[34mSELECT "file_stores".* FROM "file_stores"[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+

@@ -1,0 +1,2 @@
+class FileStore < ApplicationRecord
+end

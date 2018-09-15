@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180721050619) do
+ActiveRecord::Schema.define(version: 20180914120802) do
+
+  create_table "file_stores", force: :cascade do |t|
+    t.string "name"
+    t.string "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "front_codes", force: :cascade do |t|
     t.string "grant_type"
