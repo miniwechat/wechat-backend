@@ -28,7 +28,7 @@ class FileController < ApplicationController
       if file.nil? || file.original_filename.empty?
         'wrong'
       else
-        filename = "#{Rails.root}/public/#{file.original_filename}"
+        filename = "#{Rails.root}/public/Image/#{file.original_filename}"
         if File.exist?(filename)
           'exist'
         else
